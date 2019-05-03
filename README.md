@@ -3,7 +3,7 @@
 ![NY School Data](school-data.png)
 
 ## The Goal
-In this lab, you will recreate a page from the New York State School Data website. You will be using real New York State education data to complete this lab. The page we are replicating contains an extensive amount of content (click the link below to view), and by using props we be able to quickly and easily emulate this site.
+In this lab, you will recreate a page from the New York State School Education Data (NYSED) website. You will be using real New York State education data to complete this lab. The page we are replicating contains an extensive amount of content (click the link below to view), and by using props we be able to quickly and easily emulate this site.
 
 
 Take a look at the page you'll be designing:
