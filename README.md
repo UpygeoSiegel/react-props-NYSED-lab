@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NY State Education Data - React Props
 
-## Available Scripts
+![NY School Data](school-data.png)
 
-In the project directory, you can run:
+## The Goal
+In this lab, you will recreate a page from the New York State School Data website. You will be using real New York State education data to complete this lab. The page we are replicating contains an extensive amount of content (click the link below to view), and by using props we be able to quickly and easily emulate this site.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Take a look at the page you'll be designing:
+[C-Schools | NYSED Data Site](https://data.nysed.gov/lists.php?start=67&type=school)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The full NYSED data site can be found below:
+[NYSED Data Site](https://data.nysed.gov/)
 
-### `npm test`
+## The Lab
+New York collects vast amounts of data about every school in the state. They collect enrollment data about student demographics, graduation rates, state test results, and school survey data. All of this data is aggregated and presented in a user friendly way at the NYSED website.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For this lab, we are going to replicate a page of the NYSED website. Users are able to look up school by letter. We are going to try and reproduce the webpage for all the schools in New York State that start with the letter "C."
 
-### `npm run build`
+### Getting Started
+Open the file "nycSchoolEnrollmentData.js" in the "src" directory. This contains demographic data for every school in New York state that begins with the letter "C." Take a look a see how this data is structured.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Now, open "App.js" and notice how the school data has been imported as "data" already. Using this data, pass the name of the first school as props into a SchoolCard component.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Then, update the school card so that the name of the school is displayed in the card header.
+Once you've got the first school completed, try and get the first 9 school displayed on the page. It should look similar to the page pictured above.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###Stretch
+1. Using a loop, iterate through the school data so that EVERY school appears on the webpage.
 
-### `npm run eject`
+2. Have each SchoolCard display the percent of male students and percent of female students. Display this data anywhere on the card you choose.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Some schools don't have any data available (these schools are usually too new to have any data collected yet). On the NYSED website, schools without any data are labeled with "No Data Available" instead of the usual card. Update the SchoolCard component so schools with no data appear with the appropriate label.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Reference: https://reactjs.org/docs/conditional-rendering.html
