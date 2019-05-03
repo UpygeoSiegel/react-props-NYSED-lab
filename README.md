@@ -25,7 +25,7 @@ Now, open "App.js" and notice how the school data has been imported as "data" al
 Then, update the school card so that the name of the school is displayed in the card header.
 Once you've got the first school completed, try and get the first 9 school displayed on the page. It should look similar to the page pictured above.
 
-###Stretch
+### Stretch
 1. Using a loop, iterate through the school data so that EVERY school appears on the webpage.
 
 2. Have each SchoolCard display the percent of male students and percent of female students. Display this data anywhere on the card you choose.
